@@ -1,0 +1,41 @@
+.top-product{
+    &__header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+    }
+
+    &_swiper__btn {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    &__swiper__btn{
+       
+        display: flex;
+        & .btn-next {
+            margin-left: 10px;
+        }
+
+        & .swiper-button{
+            width: 40px;
+            height: 40px;
+            background-color: var(--color-gray-bg);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            & i {
+                font-size: 2rem;
+                color: var(--color-txt-gray);
+            }
+        }
+
+        
+    }
+
+
+}
