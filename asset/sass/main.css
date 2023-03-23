@@ -1,0 +1,142 @@
+:root {
+  --header-height: 80px;
+  --logo-width: 60px;
+  --color-txt-main: #0000;
+  --color-txt-gray: #6c6c6c;
+  --color-main: #5d9c59;
+  --color-white: #fff;
+  --color-gray-bg: #f4f4f4;
+  --container-max-width: 1300px ;
+}
+
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+html {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  padding-top: var(--header-height);
+  background-color: var(--color-white);
+}
+
+img {
+  max-width: 100%;
+}
+
+.logo img {
+  width: 9rem;
+}
+
+a {
+  color: unset;
+}
+
+a:hover {
+  color: var(--color-main);
+}
+
+.container {
+  max-width: var(--container-max-width);
+  margin: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  padding: 1rem 2.5rem;
+  text-transform: uppercase;
+  background-color: var(--color-main);
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.no-margin {
+  margin: 0 !important;
+}
+
+section {
+  margin-bottom: 9rem;
+}
+
+.section__title {
+  margin-bottom: 2rem;
+  text-transform: capitalize;
+  font-weight: 900;
+  font-size: 1.7rem;
+}
+
+.bg-image {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header {
+  background-color: var(--color-white);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.header__content {
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.header__logo img {
+  width: var(--logo-width);
+}
+.header__menu ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  position: relative;
+  font-weight: 600;
+  height: 100%;
+}
+.header__menu ul li {
+  margin-right: 1.5rem;
+}
+.header__content nav {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.header__content nav ul {
+  z-index: 1;
+  display: flex;
+  line-height: 318%;
+  justify-content: center;
+  height: 100%;
+}
+.header__content nav ul > li {
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+}
+.header__content nav ul > li ~ li {
+  margin-left: 2rem;
+}
+
+.btn-colose-menu, .btn-open-menu {
+  display: none;
+}/*# sourceMappingURL=main.css.map */
