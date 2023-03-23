@@ -62,6 +62,7 @@
     }
 
     &__txt{
+           
         position: absolute;
         top: 50%;
         left: 50%;
@@ -73,6 +74,7 @@
         text-transform: capitalize;
         font-weight: 900;
         z-index: 1000;
+        
     }
 
 
@@ -81,8 +83,4 @@
         opacity: 1;
       }
 
-   
-
-    
 }
-
